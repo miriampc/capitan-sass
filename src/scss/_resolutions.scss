@@ -1,0 +1,21 @@
+$screen-md: 768px;
+$screen-lg: 992px;
+
+@media screen and(min-width:$screen-md) {
+  @for $i from 1 through 12 {
+    .col-md-#{$i} {
+      width: $i/12*100-0.01%;
+    }
+  }
+}
+@media screen and (min-width: $screen-lg) {
+  @for $i from 1 through 12 {
+    .col-lg-#{$i}{
+      width: $i/12*100-0.01%;
+    }
+  }
+  .row {
+    display: flex;
+    justify-content: space-around;
+  }
+}

@@ -1,11 +1,45 @@
-$centrar: center;
-$title-color: #f9a91a;
-$items-colors: #333333;
-$container-margin: 10px;
+@import "colors";
+@import "resolutions";
+@import "fonts";
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+$container-margin: 10px;
+$items-none: none;
+
+.container {
+  width: 100%;
+}
 
 @for $i from 1 through 12 {
-  .col-#{$i}{
+  .col-sm-#{$i}{
     width: $i/12*100%;
   }
 }
+.aside {
+  text-align: center;
+}
+.tareas{
+  ul li{
+    list-style: $items-none;
+    padding: 10px 0;
+    margin-bottom: 10px;
+  }
+}
+.asistencia{
+  ol li{
+    margin-left: 20px;
+  }
+}
+.footer {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
