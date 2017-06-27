@@ -23,16 +23,13 @@ $items-none: none;
     margin-bottom: 10px;
   }
 }
-.asistencia{
-  ol li{
-    margin-left: 40px;
-  }
-}
+
 @mixin list($space) {
   padding: $space;
 }
 .asistencia { @include list(2%); }
 #student-list li{
+  margin-left: 40px;
   input {
     float: right;
   }
