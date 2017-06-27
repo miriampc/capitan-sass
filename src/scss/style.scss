@@ -2,14 +2,6 @@
 @import "resolutions";
 @import "fonts";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial;
-}
-
-$container-margin: 10px;
 $items-none: none;
 
 .container {
@@ -33,9 +25,20 @@ $items-none: none;
 }
 .asistencia{
   ol li{
-    margin-left: 20px;
+    margin-left: 40px;
   }
 }
+@mixin list($space) {
+  padding: $space;
+}
+.asistencia { @include list(2%); }
+#student-list li{
+  input {
+    float: right;
+  }
+  @include list(1.5%);
+}
+
 .footer {
   height: 50px;
   display: flex;

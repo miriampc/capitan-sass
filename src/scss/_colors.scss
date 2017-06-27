@@ -1,11 +1,12 @@
 $title-background: #f9a91a;
 $items-background: #333333;
+$color-text:#fff;
 
 .bg-yellow {
   background-color: $title-background;
-  color: #fff;
+  color: $color-text;
 }
 .bg-gray {
   background-color: $items-background;
-  color: #fff;
+  color: $color-text;
 }

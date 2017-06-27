@@ -136,7 +136,15 @@
   margin-bottom: 10px; }
 
 .asistencia ol li {
-  margin-left: 20px; }
+  margin-left: 40px; }
+
+.asistencia {
+  padding: 2%; }
+
+#student-list li {
+  padding: 1.5%; }
+  #student-list li input {
+    float: right; }
 
 .footer {
   height: 50px;
