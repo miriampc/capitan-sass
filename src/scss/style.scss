@@ -1,23 +1,11 @@
 $centrar: center;
-$h1-color: #212121;
+$title-color: #f9a91a;
+$items-colors: #333333;
 $container-margin: 10px;
-$container-width: 100%;
 
-#container, #scores{
-  text-align: $centrar;
-}
-#container p{
-  font-family: Arial;
-  font-size: 13px;
-}
 
-#container h1 {
-  font-family: Tahoma;
-  font-size: 45px;
-  color: $h1-color;
-}
-
-#container h2 {
-  font-family: Helvetica;
-  font-size: 35px;
+@for $i from 1 through 12 {
+  .col-#{$i}{
+    width: $i/12*100%;
+  }
 }
